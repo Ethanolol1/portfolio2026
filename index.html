@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Ethan Fang - Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -67,16 +67,38 @@
             padding: 0 2rem;
         }
 
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 0 auto 2rem;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: #999;
+            overflow: hidden;
+            animation: fadeInUp 1s ease;
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         #hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
-            animation: fadeInUp 1s ease;
+            animation: fadeInUp 1s ease 0.2s both;
         }
 
         #hero p {
             font-size: 1.5rem;
             margin-bottom: 2rem;
-            animation: fadeInUp 1s ease 0.2s both;
+            animation: fadeInUp 1s ease 0.4s both;
         }
 
         .btn {
@@ -88,7 +110,7 @@
             border-radius: 5px;
             font-weight: 600;
             transition: transform 0.3s, box-shadow 0.3s;
-            animation: fadeInUp 1s ease 0.4s both;
+            animation: fadeInUp 1s ease 0.6s both;
         }
 
         .btn:hover {
@@ -126,6 +148,16 @@
         .project-card h3 {
             color: #667eea;
             margin-bottom: 1rem;
+        }
+
+        .project-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
         }
 
         .skills-container {
@@ -184,6 +216,11 @@
         }
 
         @media (max-width: 768px) {
+            .profile-picture {
+                width: 150px;
+                height: 150px;
+            }
+
             #hero h1 {
                 font-size: 2.5rem;
             }
@@ -211,8 +248,11 @@
 
     <section id="hero">
         <div>
-            <h1>Hi, I'm Ethan Fang</h1>
-            <p>Game Developer</p>
+            <div class="profile-picture">
+                <img src="images/me.JPG" alt="Ethan Fang">
+            </div>
+            <h1>Hi! I'm Ethan Fang</h1>
+            <p>Game Developer, student, musician</p>
             <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
@@ -222,7 +262,7 @@
         <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
             I'm a 4th year undergraduate student at the University of Washington Information School and Foster School of Business.
             In my spare time I am learning the ropes of Unity game development and design, with a focus on 
-            2D action roguelikes.
+            2D action roguelikes. I have also been playing the French Horn for over 10 years!
         </p>
     </section>
 
@@ -238,7 +278,7 @@
                 <p>A Deckbuilder roguelike game that pits a player against increasingly-difficult AI opponents. The player must craft their deck to beat the opponents.</p>
             </div>
             <div class="project-card">
-                <a href="https://github.com/rairai77/DubHacks2024">Snaption-Live</a>
+                <h3><a href="https://github.com/rairai77/DubHacks2024" target="_blank">Snaption-Live</a></h3>
                 <p>A real-time transcription service plug-in for Snap Inc's "Spectacles" Virtual Reality goggles, utilizing AWS inscribe and Express.JS</p>
             </div>
         </div>
@@ -261,10 +301,9 @@
         <h2>Get In Touch</h2>
         <div class="contact-info">
             <p style="margin-bottom: 1rem;">I'd love to meet you!</p>
-            <a href="mailto:your.email@example.com">Email</a>
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+            <a href="mailto:efang100@uw.edu">Email</a>
+            <a href="https://github.com/ethanolol1" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/efang25" target="_blank">LinkedIn</a>
         </div>
     </section>
 
