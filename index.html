@@ -48,19 +48,23 @@
 
         section {
             padding: 5rem 2rem;
+        }
+
+        section:not(#hero) {
             max-width: 1200px;
             margin: 0 auto;
         }
 
         #hero {
-            min-height: 100vh;
+            height: 100vh;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            margin-top: 0;
+            padding: 0 2rem;
         }
 
         #hero h1 {
@@ -207,8 +211,8 @@
 
     <section id="hero">
         <div>
-            <h1>Hi, I'm Your Name</h1>
-            <p>Web Developer | Designer | Creative Thinker</p>
+            <h1>Hi, I'm Ethan Fang</h1>
+            <p>Game Developer</p>
             <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
@@ -243,21 +247,20 @@
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills-container">
+            <span class="skill-tag">Unity/C#</span>
             <span class="skill-tag">HTML/CSS</span>
             <span class="skill-tag">JavaScript</span>
             <span class="skill-tag">React</span>
             <span class="skill-tag">Node.js</span>
             <span class="skill-tag">Python</span>
             <span class="skill-tag">Git</span>
-            <span class="skill-tag">UI/UX Design</span>
-            <span class="skill-tag">Responsive Design</span>
         </div>
     </section>
 
     <section id="contact">
         <h2>Get In Touch</h2>
         <div class="contact-info">
-            <p style="margin-bottom: 1rem;">I'd love to hear from you!</p>
+            <p style="margin-bottom: 1rem;">I'd love to meet you!</p>
             <a href="mailto:your.email@example.com">Email</a>
             <a href="https://github.com/yourusername" target="_blank">GitHub</a>
             <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
@@ -266,7 +269,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Ethan Fang. All rights reserved.</p>
     </footer>
 
     <script>
